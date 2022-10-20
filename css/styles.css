@@ -112,6 +112,9 @@ body{
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+
 
     color: var(--page-main-color);
 }
@@ -125,6 +128,10 @@ body{
     color: var(--accent-color);
 }
 
+.mail,
+.phone{
+    margin-right: 10px;
+}
 
 /* main styles*/
 
@@ -139,6 +146,17 @@ body{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.bg-picture{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
 }
 
 .bgcolor-dark{
@@ -194,12 +212,6 @@ body{
     margin-right: 30px;
 }
 
-/*.features-title{
-    margin-top: 0;
-    margin-bottom: 0;
-    display:none;
-}*/
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -214,13 +226,24 @@ body{
     overflow: hidden;
 }
 
-.box{
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
+.graphic{
+    
 }
 
+.features-picture{
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+}
 
 .features-subtitle{
     margin-top: 0;
@@ -242,17 +265,15 @@ body{
 }
 
 .activities-title,
-.team-title {
+.team-title,
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-}
-
-.team-title,
-.activities-title{
-    margin-top: 0;
-    margin-bottom: 50px;
 }
 
 .activities.section{
@@ -289,10 +310,6 @@ body{
     background-color:var(--white-color);
 }
 
-.team-title{
-    margin-bottom: 48px;
-}
-
 .photo{
     display: block;
 }
@@ -325,6 +342,38 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
+.clients-link{
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-logo{
+    padding: 0;
+    border: none;
+}
+
+
+
+.clients-list{
+    display: flex;
+    
+    
+}
+
+.clients-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 /*additional portfolio styles*/
 
