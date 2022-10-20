@@ -214,6 +214,14 @@ body{
     overflow: hidden;
 }
 
+.box{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+
 .features-subtitle{
     margin-top: 0;
     margin-bottom: 10px;
